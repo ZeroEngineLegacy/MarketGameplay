@@ -1,0 +1,50 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "DamageCube",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, 0, 0],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Model = 
+	{
+		bool Visible = true,
+		bool ViewCulling = true,
+		bool VisibilityEvents = true,
+		string Material = "4de020863e85bb61:DefaultMaterial",
+		string Mesh = "4de0354322b345ae:Cube",
+	},
+	RigidBody = 
+	{
+		Vec3 Velocity = [0, 0, 0],
+		Vec3 AngularVelocity = [0, 0, 0],
+		Enum DynamicState = Dynamic,
+		bool AllowSleep = true,
+		bool Asleep = false,
+		bool RotationLocked = false,
+		Enum Mode2D = InheritFromSpace,
+	},
+	BoxCollider = 
+	{
+		bool Ghost = false,
+		bool SendsEvents = true,
+		string Material = "4de020863e872da8:DefaultPhysicsMaterial",
+		string CollisionGroup = "4e740859314e5515:DefaultGroup",
+		Vec3 Offset = [0, 0, 0],
+		Vec3 HalfSize = [0.5, 0.5, 0.5],
+	},
+	DamageOnCollide = 
+	{
+		float Damage = 10,
+		bool SendsDeathEvent = true,
+		bool DieOnCollide = true,
+	},
+},

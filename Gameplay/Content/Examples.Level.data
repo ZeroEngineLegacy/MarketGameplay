@@ -1,0 +1,274 @@
+Level = 
+{
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 1,
+		},
+		Named = 
+		{
+			string Name = "LevelSettings",
+		},
+		GravityEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			bool LocalSpaceDirection = true,
+			float Strength = 10,
+			Vec3 Direction = [0, -1, 0],
+		},
+		DragEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			float Drag = 0.699999988,
+			float AngularDrag = 0.100000001,
+		},
+		GridDraw = 
+		{
+			bool Active = true,
+			bool HalfCellOffset = false,
+			float CellSize = 1,
+			GridAxis Axis = YAxis,
+			int Lines = 100,
+			bool DrawAxisOrigins = true,
+			bool AlwaysDrawInEditor = true,
+			bool DrawInGame = false,
+			Vec4 GridColor = [0.5, 0.5, 0.5, 0.400000006],
+			Vec4 GridHiLight = [0, 0, 0, 0.400000006],
+			int HilightInterval = 10,
+			bool FollowEditorCamera = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 2,
+		},
+		Named = 
+		{
+			string Name = "EditorCamera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 12.9409523, 48.2962914],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [-0.130526185, -1.10221432e-08, -2.85274093e-09, 0.991444945],
+		},
+		CameraViewport = 
+		{
+			bool RenderInEditor = true,
+			bool RenderInGame = false,
+			bool RenderToViewport = true,
+			bool ForwardViewportEvents = false,
+			uint RenderOrder = 0,
+			Vec2 NormalizedSize = [1, 1],
+			Vec2 NormalizedOffset = [0, 0],
+			CogPath Camera = 
+			{
+				string Path = ".",
+				bool ErrorOnResolveToNull = false,
+				bool ErrorOnPathCantCompute = false,
+				bool ErrorOnDirectLinkFail = false,
+				bool UpdateCogOnPathChange = true,
+				bool UpdatePathOnCogChange = true,
+				bool UpdateCogOnInitialize = true,
+				bool ResolvedNullErrorOccurred = false,
+				uint ResolvedCog = 2,
+				CogPathPreference PathPreference0 = CogRelative,
+				CogPathPreference PathPreference1 = SpaceRelative,
+				CogPathPreference PathPreference2 = Absolute,
+			},
+			CogPath Renderer = 
+			{
+				string Path = ".",
+				bool ErrorOnResolveToNull = false,
+				bool ErrorOnPathCantCompute = false,
+				bool ErrorOnDirectLinkFail = false,
+				bool UpdateCogOnPathChange = true,
+				bool UpdatePathOnCogChange = true,
+				bool UpdateCogOnInitialize = true,
+				bool ResolvedNullErrorOccurred = false,
+				uint ResolvedCog = 2,
+				CogPathPreference PathPreference0 = CogRelative,
+				CogPathPreference PathPreference1 = SpaceRelative,
+				CogPathPreference PathPreference2 = Absolute,
+			},
+			Vec2 Resolution = [1920, 1080],
+			ViewportScaling ViewportScaling = Fill,
+			Vec4 MarginColor = [0, 0, 0, 1],
+		},
+		Camera = 
+		{
+			Facing Facing = NegativeZ,
+			float NearPlane = 0.5,
+			float FarPlane = 500,
+			PerspectiveMode PerspectiveMode = Perspective,
+			float FieldOfView = 45,
+			float Size = 20,
+		},
+		DefaultRenderer = 
+		{
+			Vec4 ClearColor = [0.125, 0.125, 0.125, 1],
+			bool DrawDebug = true,
+		},
+		EditorCameraController = 
+		{
+			ControlMode ControlMode = Orbit,
+			float LookDistance = 50,
+			float VerticalAngle = 0.261799395,
+			float HorizontalAngle = 0,
+			Vec3 LookTarget = [0, 0, 0],
+			float MoveSensitivity = 1,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 3,
+		},
+		Named = 
+		{
+			string Name = "Camera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 50],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		CameraViewport = 
+		{
+			bool RenderInEditor = false,
+			bool RenderInGame = true,
+			bool RenderToViewport = true,
+			bool ForwardViewportEvents = false,
+			uint RenderOrder = 0,
+			Vec2 NormalizedSize = [1, 1],
+			Vec2 NormalizedOffset = [0, 0],
+			CogPath Camera = 
+			{
+				string Path = ".",
+				bool ErrorOnResolveToNull = false,
+				bool ErrorOnPathCantCompute = false,
+				bool ErrorOnDirectLinkFail = false,
+				bool UpdateCogOnPathChange = true,
+				bool UpdatePathOnCogChange = true,
+				bool UpdateCogOnInitialize = true,
+				bool ResolvedNullErrorOccurred = false,
+				uint ResolvedCog = 3,
+				CogPathPreference PathPreference0 = CogRelative,
+				CogPathPreference PathPreference1 = SpaceRelative,
+				CogPathPreference PathPreference2 = Absolute,
+			},
+			CogPath Renderer = 
+			{
+				string Path = ".",
+				bool ErrorOnResolveToNull = false,
+				bool ErrorOnPathCantCompute = false,
+				bool ErrorOnDirectLinkFail = false,
+				bool UpdateCogOnPathChange = true,
+				bool UpdatePathOnCogChange = true,
+				bool UpdateCogOnInitialize = true,
+				bool ResolvedNullErrorOccurred = false,
+				uint ResolvedCog = 3,
+				CogPathPreference PathPreference0 = CogRelative,
+				CogPathPreference PathPreference1 = SpaceRelative,
+				CogPathPreference PathPreference2 = Absolute,
+			},
+			Vec2 Resolution = [1920, 1080],
+			ViewportScaling ViewportScaling = Letterbox,
+			Vec4 MarginColor = [0, 0, 0, 1],
+		},
+		Camera = 
+		{
+			Facing Facing = NegativeZ,
+			float NearPlane = 0.5,
+			float FarPlane = 100,
+			PerspectiveMode PerspectiveMode = Perspective,
+			float FieldOfView = 45,
+			float Size = 20,
+		},
+		DefaultRenderer = 
+		{
+			Vec4 ClearColor = [0, 0, 0, 1],
+			bool DrawDebug = false,
+		},
+		SoundListener = 
+		{
+			bool Active = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 4,
+		},
+		Named = 
+		{
+			string Name = "Spawner",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 6.08691835, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		ObjectSpawner = 
+		{
+			int Count = 6,
+			float Delay = 1,
+			Vec3 Velocity = [0, 0, 0],
+			string ArchetypeToSpawn = "583857ddf4d10499:DamageCube",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 5,
+		},
+		Named = 
+		{
+			string Name = "Player",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			bool Visible = true,
+			bool ViewCulling = true,
+			bool VisibilityEvents = true,
+			string Material = "4de020863e85bb61:DefaultMaterial",
+			string Mesh = "4de0354322b376ae:Sphere",
+		},
+		Health = 
+		{
+			float MaxHealth = 50,
+			bool DestroyAtZeroHealth = true,
+			float DamageScalar = 1,
+			bool DebugPrint = true,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = false,
+			bool SendsEvents = true,
+			string Material = "4de020863e872da8:DefaultPhysicsMaterial",
+			string CollisionGroup = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 0.5,
+		},
+		CreateOnDeath = 
+		{
+			string ArchetypeToCreate = "583855ef8e4ec19c:TwoSecondCube",
+		},
+	},
+},
