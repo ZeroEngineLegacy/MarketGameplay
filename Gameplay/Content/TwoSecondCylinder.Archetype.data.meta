@@ -3,8 +3,8 @@ DataContent
 {
 	DataBuilder 
 	{
-		var Name = "DamageCube"
-		var ResourceId = 0x583857ddf4d10499
+		var Name = "TwoSecondCylinder"
+		var ResourceId = 0x581cee81c750620d
 		var LoaderType = "Cog"
 		var Version = 0
 		var ShowInEditor = true
@@ -13,7 +13,7 @@ DataContent
 	{
 		var Tags = Array
 		{
-			"Cog"
+			"Archetype"
 		}
 	}
 }

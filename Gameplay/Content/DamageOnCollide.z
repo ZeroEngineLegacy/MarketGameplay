@@ -7,6 +7,16 @@
 /* Brief: Dispatches a DamageEvent on objects this object collides with.                                    */
 /************************************************************************************************************/
 
+// Event structure containing information used to apply damage to an object.
+class DamageEvent : ZilchEvent
+{
+    var Damage : Real = 0.0;
+    // The contact normal towards the object that is taking damage.
+    var Normal : Real3 = Real3(0.0, 0.0, 0.0);
+    // The point in world space where the damage is being applied.
+    // Can be used to spawn effects at the point of contact.
+    var WorldPoint : Real3 = Real3(0.0, 0.0, 0.0);
+}
 
 class DamageOnCollide : ZilchComponent
 {

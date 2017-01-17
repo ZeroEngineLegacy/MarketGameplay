@@ -1,7 +1,7 @@
 [Version:1]
 Cog 
 {
-	var Name = "DamageCube"
+	var Name = "TwoSecondCylinder"
 	var LinkId = 1
 	Transform 
 	{
@@ -15,7 +15,13 @@ Cog
 		var ViewCulling = true
 		var VisibilityEvents = true
 		var Material = "583afb5e7bf75e18:ZeroMaterial"
-		var Mesh = "4de0354322b345ae:Cube"
+		var Mesh = "4de0354322b3572e:Cylinder"
+	}
+	TimedDeath 
+	{
+		var Lifetime = 2
+		var SendsDeathEvent = true
+		var AutoDestroy = true
 	}
 	RigidBody 
 	{
@@ -27,22 +33,15 @@ Cog
 		var RotationLocked = false
 		var Mode2D = Mode2DStates.InheritFromSpace
 	}
-	BoxCollider 
+	CylinderCollider 
 	{
 		var Ghost = false
 		var SendsEvents = true
 		var Material = "4de020863e872da8:DefaultPhysicsMaterial"
 		var CollisionGroup = "4e740859314e5515:DefaultGroup"
 		var Offset = Vec3{0, 0, 0}
-		var HalfSize = Vec3{0.5, 0.5, 0.5}
-	}
-	DamageOnCollide 
-	{
-		var Damage = 10
-		var SendsDeathEvent = true
-		var DieOnCollide = true
-	}
-	DestroyOffscreen 
-	{
+		var Radius = 0.5
+		var Height = 1
+		var Direction = AxisDirection.Y
 	}
 }

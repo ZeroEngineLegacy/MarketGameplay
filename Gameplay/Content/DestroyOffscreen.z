@@ -16,6 +16,10 @@ class DestroyOffscreen : ZilchComponent
     
     function OnExitView(event : GraphicalEvent)
     {
+        if (this.Owner.IsBeingDestroyed)
+            return;
+        
         this.Owner.Destroy();
+        Console.WriteLine("Destroyed Off Screen");
     }
 }
