@@ -9,17 +9,17 @@
 
 class DestroyOffscreen : ZilchComponent
 {
-    function Initialize(init : CogInitializer)
-    {
-        Zero.Connect(this.Owner, Events.ExitView, this.OnExitView);
-    }
+  function Initialize(init : CogInitializer)
+  {
+    Zero.Connect(this.Owner, Events.ExitView, this.OnExitView);
+  }
+  
+  function OnExitView(event : GraphicalEvent)
+  {
+    if (this.Owner.IsBeingDestroyed)
+      return;
     
-    function OnExitView(event : GraphicalEvent)
-    {
-        if (this.Owner.IsBeingDestroyed)
-            return;
-        
-        this.Owner.Destroy();
-        Console.WriteLine("Destroyed Off Screen");
-    }
+    this.Owner.Destroy();
+    Console.WriteLine("Destroyed Off Screen");
+  }
 }
