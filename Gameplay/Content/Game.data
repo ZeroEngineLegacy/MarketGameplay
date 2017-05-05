@@ -1,20 +1,15 @@
-GameSession = 
+[Version:1]
+GameSession 
 {
-	LinkId = 
+	var Name = ""
+	var LinkId = 1
+	DefaultGameSetup 
 	{
-		uint Id = 1,
-	},
-	Archetyped = 
+		var StartingSpace = "576f215c0825de61:Space"
+		var StartingLevel = "58385682c2e519d1:Examples"
+		var LoadEditingLevel = true
+	}
+	ZilchState 
 	{
-		string Name = "576f215c0825a2d3:Game",
-		bool ModifiedFromArchetype = false,
-	},
-	DefaultGameSetup = 
-	{
-		string StartingSpace = "576f215c0825de61:Space",
-		string StartingLevel = "4faa6050b86892a8:DefaultLevel",
-	},
-	ZilchState = 
-	{
-	},
-},
+	}
+}
