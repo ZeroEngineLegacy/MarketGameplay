@@ -8,7 +8,7 @@ Cog
 		var ProjectOwner = ""
 		var DefaultLevel = "Level"
 		var ProjectSpace = "Space"
-		var ProjectEngineRevision = 16582
+		var ProjectEngineRevision = 116
 		var AutoTakeProjectScreenshot = true
 		var Guid = 0x5806f028e95e3821
 	}
@@ -16,21 +16,17 @@ Cog
 	{
 		var ViewCube = true
 		var ViewCubeSize = 0.150000006
-		var ScriptReloadEditor = ScriptReloadMethod.ReInitializeObjects
 		var ScriptReloadGame = ScriptReloadMethod.PatchObjects
 		var AutoUpdateContentChanges = true
 	}
 	LauncherProjectInfo 
 	{
 		var Tags = ""
-		var ExperimentalBranchName = "BraveCobra"
-		var MajorVersion = 0
+		var ExperimentalBranchName = ""
+		var MajorVersion = 1
 		var MinorVersion = 0
 		var PatchVersion = 0
-		var RevisionId = 15450
-	}
-	ProjectConfig 
-	{
-		var EditorMode = EditorMode.Mode3D
+		var RevisionId = 116
+		var ShortChangeSet = "d11382dc5a97"
 	}
 }
